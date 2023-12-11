@@ -70,7 +70,7 @@ public class LoginSteps {
     public void sendLogPostHTTPReqInvEmail() {
         log.sendLogPostHTTPrequest5();
     }
-    @Then("I failed to login with status code 400")
+    @Then("I failed to login with status code 401")
     public void failedToLog400() {
         log.response5();
     }

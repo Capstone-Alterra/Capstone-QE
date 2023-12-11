@@ -22,7 +22,7 @@ Feature: Login
   Scenario: TC005 - Fail to login because entering invalid email
     Given I set login endpoints
     When I send login POST HTTP request with invalid email
-    Then I failed to login with status code 400
+    Then I failed to login with status code 401
 
   Scenario: TC006 - Fail to login because filling email field with username
     Given I set login endpoints url
@@ -42,4 +42,4 @@ Feature: Login
   Scenario: TC009 - Failed to login because method is wrong
     Given I set valid endpoint url
     When I send login POST HTTP request with wrong method
-    Then I can not l  ogin and get response code 405
+    Then I can not login and get response code 405

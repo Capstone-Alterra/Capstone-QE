@@ -15,8 +15,8 @@ public class Login {
     @Step("I send login POST HTTP request and fill body parameter")
     public void sendLogPostHTTPrequest(){
         JSONObject body = new JSONObject();
-        body.put("email","izazrakha@gmail.com");
-        body.put("password","izaz123");
+        body.put("email","21102096@ittelkom-pwt.ac.id");
+        body.put("password","izaz1234");
 
         SerenityRest.given().header("Content-Type", "application/json").body(body.toJSONString()).post(setEndpoints());
     }
@@ -50,7 +50,7 @@ public class Login {
     public void sendLogPostHTTPrequest3(){
         JSONObject body = new JSONObject();
         body.put("email","");
-        body.put("password","izaz123");
+        body.put("password","izaz1234");
 
         SerenityRest.given().header("Content-Type", "application/json").body(body.toJSONString()).post(setEndpoints3());
     }
@@ -66,7 +66,7 @@ public class Login {
     @Step("I send login POST HTTP request with empty password")
     public void sendLogPostHTTPrequest4(){
         JSONObject body = new JSONObject();
-        body.put("email","izazrakha@gmail.com");
+        body.put("email","21102096@ittelkom-pwt.ac.id");
         body.put("password","");
 
         SerenityRest.given().header("Content-Type", "application/json").body(body.toJSONString()).post(setEndpoints4());
@@ -84,13 +84,13 @@ public class Login {
     public void sendLogPostHTTPrequest5(){
         JSONObject body = new JSONObject();
         body.put("email","ijas@gmail.com");
-        body.put("password","izaz123");
+        body.put("password","izaz1234");
 
         SerenityRest.given().header("Content-Type", "application/json").body(body.toJSONString()).post(setEndpoints5());
     }
-    @Step("I failed to login with status code 400")
+    @Step("I failed to login with status code 401")
     public void response5(){
-        restAssuredThat(response -> response.statusCode(400));
+        restAssuredThat(response -> response.statusCode(401));
     }
 
     @Step("I set login endpoints url")
@@ -101,7 +101,7 @@ public class Login {
     public void sendLogPostHTTPrequest6(){
         JSONObject body = new JSONObject();
         body.put("email","Izaz Rakha");
-        body.put("password","izaz123");
+        body.put("password","izaz1234");
 
         SerenityRest.given().header("Content-Type", "application/json").body(body.toJSONString()).post(setEndpoints6());
     }
@@ -117,8 +117,8 @@ public class Login {
     @Step("I send login POST HTTP request with invalid parameter")
     public void sendLogPostHTTPrequest7(){
         JSONObject body = new JSONObject();
-        body.put("mail","izazrakha@gmail.com");
-        body.put("pwd","izaz123");
+        body.put("mail","21102096@ittelkom-pwt.ac.id");
+        body.put("pwd","izaz1234");
 
         SerenityRest.given().header("Content-Type", "application/json").body(body.toJSONString()).post(setEndpoints7());
     }
@@ -146,15 +146,15 @@ public class Login {
     public String setEndpoints9(){
         return url;
     }
-    @Step("I send login POST HTTP request and fill body parameter")
+    @Step("I send login POST HTTP request with wrong method")
     public void sendLogPostHTTPrequest9(){
         JSONObject body = new JSONObject();
-        body.put("email","izazrakha@gmail.com");
-        body.put("password","izaz123");
+        body.put("email","21102096@ittelkom-pwt.ac.id");
+        body.put("password","izaz1234");
 
         SerenityRest.given().header("Content-Type", "application/json").body(body.toJSONString()).put(setEndpoints9());
     }
-    @Step("I successfully login with status code 200")
+    @Step("I can not login and get response code 405")
     public void response9(){
         restAssuredThat(response -> response.statusCode(405));
     }
