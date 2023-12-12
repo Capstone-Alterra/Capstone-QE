@@ -1,0 +1,223 @@
+[35m[Appium][39m Welcome to Appium v1.22.1
+[35m[Appium][39m Non-default server args:
+[35m[Appium][39m   port: 50409
+[35m[Appium][39m   loglevel: info
+[35m[Appium][39m   tmpDir: C:\Users\Valen\AppData\Local\Temp\\Katalon\Appium\Temp1702203272736
+[35m[Appium][39m   chromedriverPort: 50410
+[35m[Appium][39m Deprecated server args:
+[35m[Appium][39m   [31m--chromedriver-port[39m => --default-capabilities
+[35m[Appium][39m Default capabilities, which will be added to each request unless overridden by desired capabilities:
+[35m[Appium][39m   chromedriverPort: 50410
+[35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:50409
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m21 ms - 68[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m4 ms - 68[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
+[35m[HTTP][39m [90m{"desiredCapabilities":{"appActivity":".Settings","appPackage":"com.android.settings","newCommandTimeout":1800,"platformVersion":"11","automationName":"uiautomator2","autoGrantPermissions":true,"platformName":"Android","udid":"emulator-5554","deviceName":"emulator-5554 (Android SDK built for x86 - Android 11)","platform":"ANDROID","systemPort":8226},"capabilities":{"firstMatch":[{"appium:appActivity":".Settings","appium:appPackage":"com.android.settings","appium:autoGrantPermissions":true,"appium:automationName":"uiautomator2","appium:deviceName":"emulator-5554 (Android SDK built for x86 - Android 11)","appium:newCommandTimeout":1800,"platform":"ANDROID","platformName":"android","appium:platformVersion":"11","appium:systemPort":8226,"appium:udid":"emulator-5554"}]}}[39m
+[35m[BaseDriver][39m The following capabilities are not standard capabilities and should have an extension prefix:
+[35m[BaseDriver][39m   platform
+[35m[BaseDriver][39m   chromedriverPort
+[35m[Appium][39m Appium v1.22.1 creating new AndroidUiautomator2Driver (v1.70.1) session
+[35m[BaseDriver][39m The following capabilities were provided, but are not recognized by Appium:
+[35m[BaseDriver][39m   platform
+[35m[BaseDriver][39m Session created with session id: de9655b3-6361-48f1-8a90-6a00c72dd593
+[35m[UiAutomator2][39m Starting 'com.android.settings' directly on the device
+[35m[ADB][39m Found 3 'build-tools' folders under 'C:\Users\Valen\AppData\Local\Android\Sdk' (newest first):
+[35m[ADB][39m     C:/Users/Valen/AppData/Local/Android/Sdk/build-tools/33.0.1
+[35m[ADB][39m     C:/Users/Valen/AppData/Local/Android/Sdk/build-tools/33.0.0
+[35m[ADB][39m     C:/Users/Valen/AppData/Local/Android/Sdk/build-tools/30.0.3
+[35m[ADB][39m Using 'adb.exe' from 'C:\Users\Valen\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+[35m[AndroidDriver][39m Retrieving device list
+[35m[AndroidDriver][39m Using device: emulator-5554
+[35m[ADB][39m Using 'adb.exe' from 'C:\Users\Valen\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+[35m[ADB][39m Getting device platform version
+[35m[UiAutomator2][39m Relaxing hidden api policy
+[35m[AndroidDriver][39m No app sent in, not parsing package/activity
+[35m[ADB][39m Using 'apksigner.jar' from 'C:\Users\Valen\AppData\Local\Android\Sdk\build-tools\33.0.1\lib\apksigner.jar'
+[35m[ADB][39m 'C:\Users\Valen\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.27.0.apk' is signed with the default certificate
+[35m[ADB][39m 'C:\Users\Valen\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' is signed with the default certificate
+[35m[UiAutomator2][39m Server packages are not going to be (re)installed
+[35m[ADB][39m Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+[35m[UiAutomator2][39m Starting UIAutomator2 server 4.27.0
+[35m[UiAutomator2][39m Using UIAutomator2 server from 'C:\Users\Valen\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.27.0.apk' and test from 'C:\Users\Valen\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
+[35m[UiAutomator2][39m Waiting up to 30000ms for UiAutomator2 to be online...
+[35m[WD Proxy][39m socket hang up
+[35m[WD Proxy][39m socket hang up
+[35m[WD Proxy][39m socket hang up
+[35m[WD Proxy][39m socket hang up
+[35m[WD Proxy][39m socket hang up
+[35m[WD Proxy][39m socket hang up
+[35m[WD Proxy][39m Determined the downstream protocol as 'W3C'
+[35m[AndroidDriver][39m Screen already unlocked, doing nothing
+[35m[UiAutomator2][39m Starting 'com.android.settings/.Settings and waiting for 'com.android.settings/.Settings'
+[35m[Appium][39m New AndroidUiautomator2Driver session created successfully, session de9655b3-6361-48f1-8a90-6a00c72dd593 added to master session list
+[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m26566 ms - 1207[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593 [39m[32m200[39m [90m98 ms - 1161[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593 [39m[32m200[39m [90m46 ms - 1161[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m4 ms - 68[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":60000}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/timeouts [39m[32m200[39m [90m10 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/screenshot [39m[32m200[39m [90m1181 ms - 228964[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/window/rect[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/window/rect [39m[32m200[39m [90m60 ms - 50[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/appium/device/system_bars[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/appium/device/system_bars [39m[32m200[39m [90m221 ms - 148[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/appium/device/activate_app[39m
+[35m[HTTP][39m [90m{"bundleId":"com.example.flutter_raih_peduli"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/appium/device/activate_app [39m[32m200[39m [90m1422 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/source[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (de9655b3)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId 6860edeb-6174-440c-9c0d-1aed1f49502a with de9655b3-6361-48f1-8a90-6a00c72dd593
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/source [39m[32m200[39m [90m1317 ms - 20416[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/de9655b[35m[BaseDriver][39m Shutting down because we waited 1800 seconds for a command
+[35m[Appium][39m Closing session, cause was 'New Command Timeout of 1800 seconds expired. Try customizing the timeout using the 'newCommandTimeout' desired capability'
+[35m[Appium][39m Removing session '93693ac8-5dfe-46ea-9d8d-6022234d14c9' from our master session list
+[35m[UiAutomator2][39m Did not get confirmation UiAutomator2 deleteSession worked; Error was: UnknownError: An unknown server-side error occurred while processing the command. Original error: 'DELETE /' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+[35m[UiAutomator2][39m Restoring hidden api policy to the device default configuration
+s [39m[32m200[39m [90m129 ms - 139[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@class = 'android.widget.ImageView' and @resource-id = '' and (@text = '' or . = '')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/elements [39m[32m200[39m [90m487 ms - 2059[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/elements[39m
+[35m[HTTP][39m [90m{"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.ImageView\").resourceId(\"\")"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/de9655b3-6361-48f1-[35m[BaseDriver][39m Shutting down because we waited 1800 seconds for a command
+[35m[Appium][39m Closing session, cause was 'New Command Timeout of 1800 seconds expired. Try customizing the timeout using the 'newCommandTimeout' desired capability'
+[35m[Appium][39m Removing session '916cae76-638e-4784-9fbe-8b82808f5822' from our master session list
+[35m[UiAutomator2][39m Did not get confirmation UiAutomator2 deleteSession worked; Error was: UnknownError: An unknown server-side error occurred while processing the command. Original error: 'DELETE /' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+[35m[UiAutomator2][39m Restoring hidden api policy to the device default configuration
+llView[1]/android.widget.ImageView[4]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/elements [39m[32m200[39m [90m210 ms - 139[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/element/00000000-0000-0117-0000-00a600000003/location[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (de9655b3)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId 6860edeb-6174-440c-9c0d-1aed1f49502a with de9655b3-6361-48f1-8a90-6a00c72dd593
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/element/00000000-0000-0117-0000-00a600000003/location [39m[32m200[39m [90m61 ms - 78[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/element/00000000-0000-0117-0000-00a600000003/size[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (de9655b3)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId 6860edeb-6174-440c-9c0d-1aed1f49502a with de9655b3-6361-48f1-8a90-6a00c72dd593
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/element/00000000-0000-0117-0000-00a600000003/size [39m[32m200[39m [90m39 ms - 87[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@class = 'android.widget.ImageView' and @resource-id = '' and (@text = '' or . = '')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/elements [39m[32m200[39m [90m392 ms - 2059[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/elements[39m
+[35m[HTTP][39m [90m{"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.ImageView\").resourceId(\"\")"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/elements [39m[32m200[39m [90m456 ms - 2059[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/source[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (de9655b3)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId 6860edeb-6174-440c-9c0d-1aed1f49502a with de9655b3-6361-48f1-8a90-6a00c72dd593
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/source [39m[32m200[39m [90m122 ms - 11938[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/screenshot [39m[32m200[39m [90m1179 ms - 1080498[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@class = 'android.view.View' and @resource-id = '' and (@text = '' or . = '')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/elements [39m[32m200[39m [90m187 ms - 779[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/elements[39m
+[35m[HTTP][39m [90m{"using":"accessibility id","value":"News"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/elements [39m[32m200[39m [90m46 ms - 139[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/source[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (de9655b3)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId 6860edeb-6174-440c-9c0d-1aed1f49502a with de9655b3-6361-48f1-8a90-6a00c72dd593
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/source [39m[32m200[39m [90m95 ms - 9382[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/screenshot [39m[32m200[39m [90m953 ms - 238308[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@class = 'android.view.View' and @resource-id = '' and (@text = '' or . = '')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/elements [39m[32m200[39m [90m181 ms - 1291[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/elements[39m
+[35m[HTTP][39m [90m{"using":"accessibility id","value":"Email tidak boleh kosong"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/elements [39m[32m200[39m [90m51 ms - 139[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@class = 'android.view.View' and @resource-id = '' and (@text = '' or . = '')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/elements [39m[32m200[39m [90m138 ms - 1291[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/elements[39m
+[35m[HTTP][39m [90m{"using":"accessibility id","value":"Password tidak boleh kosong"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/elements [39m[32m200[39m [90m42 ms - 139[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/source[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (de9655b3)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId 6860edeb-6174-440c-9c0d-1aed1f49502a with de9655b3-6361-48f1-8a90-6a00c72dd593
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/source [39m[32m200[39m [90m70 ms - 9373[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/screenshot [39m[32m200[39m [90m687 ms - 207620[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@class = 'android.view.View' and @resource-id = '' and (@text = '' or . = '')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/elements [39m[32m200[39m [90m126 ms - 1163[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/elements[39m
+[35m[HTTP][39m [90m{"using":"accessibility id","value":"Format email salah"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/elements [39m[32m200[39m [90m41 ms - 139[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/source[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (de9655b3)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId 6860edeb-6174-440c-9c0d-1aed1f49502a with de9655b3-6361-48f1-8a90-6a00c72dd593
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/source [39m[32m200[39m [90m130 ms - 4553[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/screenshot [39m[32m200[39m [90m2047 ms - 174088[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@class = 'android.widget.ImageView' and @resource-id = '' and (@text = '' or . = '')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593/elements [39m[32m200[39m [90m225 ms - 139[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[Appium][39m Removing session de9655b3-6361-48f1-8a90-6a00c72dd593 from our master session list
+[35m[UiAutomator2][39m Restoring hidden api policy to the device default configuration
+[35m[HTTP][39m [37m<-- DELETE /wd/hub/session/de9655b3-6361-48f1-8a90-6a00c72dd593 [39m[32m200[39m [90m1323 ms - 14[39m
+[35m[HTTP][39m [90m[39m
