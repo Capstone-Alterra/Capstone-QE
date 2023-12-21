@@ -16,17 +16,52 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@tag
-Feature: Title of your feature
+
+Feature: Donate fundraising
   I want to use this template for my feature file
 
-  @tag1
-  Scenario Outline: Title of your scenario outline
-    Given I want to write a step with <name>
-    When I check for the <value> in step
-    Then I verify the <status> in step
 
-    Examples: 
-      | name  | value | status  |
-      | name1 |     5 | success |
-      | name2 |     7 | Fail    |
+  #Scenario: I want input nominal of donation manually
+    #Given I can verify the homepage after login
+    #When I click donasi button on the dashboard
+    #And I can choose which donation that i want to
+    #And I click button donasi sekarang
+    #And I input nominal donation manually
+    #And I click button lanjut
+    #Then I direct to method of payment screen
+    #
+    #Scenario: I want input nominal of donation by choosing nominal
+    #Given I can verify the homepage after login
+    #When I click donasi button on the dashboard
+    #And I can choose which donation that i want to
+    #And I click button donasi sekarang
+    #And I choose nomnial
+    #And I click button lanjut
+    #Then I direct to method of payment screen
+    
+    Scenario: I donate with transfer bank 
+    Given I can verify the homepage
+    When I click donasi button on the dashboard
+    And I can choose which donation that i want to
+    And I click button donasi sekarang
+    And I choose nomnial
+    And I click button lanjut
+    And I direct to method of payment screen
+    And I choose which bank i want to transfer with
+    And I can see detail of my donation
+    Then I success donate fundraising
+    
+    
+    #Scenario: I donate with E wallet
+    #Given I can verify the homepage after login
+    #When I click donasi button on the dashboard
+    #And I can choose which donation that i want to
+    #And I click button donasi sekarang
+    #And I choose nomnial
+    #And I click button lanjut
+    #And I direct to method of payment screen
+    #And I choose which E-wallet i want to transfer with
+    #And I can see detail of my donation with e wallet
+    #Then I success donate fundraising
+    
+

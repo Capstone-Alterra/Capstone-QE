@@ -2,23 +2,23 @@
 @tag
 Feature: Register
 
-  #@tag1
-  #Scenario Outline: User success sign up
-    #Given I already open application
-    #When i click daftar button
-    #And I input nama <Nama>
-    #And I input alamat <Alamat>
-    #And I input email <Email>
-    #And I choose my gender
-    #And I input password <Password>
-    #And I input nomor <Nomor>
-    #And I click register button
-    #Then I success register my account
-#
-    #Examples: 
-#
-      #| Nama  				| Email 												| Alamat  | Nomor 			| Password 		|
-      #| valen siahaan | valenmargaretha249@gmail.com	| Medan		|'082272978461' | siahaan1234 |
+  @tag1
+  Scenario Outline: User success sign up
+    Given I already open application
+    When i click daftar button
+    And I input nama <Nama>
+    And I input alamat <Alamat>
+    And I input email <Email>
+    And I choose my gender
+    And I input password <Password>
+    And I input nomor <Nomor>
+    And I click register button
+    Then I success register my account
+
+    Examples: 
+
+      | Nama  				| Email 												| Alamat  | Nomor 			| Password 		|
+      | valen siahaan | valenmargaretha249@gmail.com	| Medan		|'082272978461' | siahaan1234 |
  
    @tag2
   Scenario Outline: User failed sign up with nama lengkap not inputted

@@ -16,17 +16,18 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@tag
-Feature: Title of your feature
-  I want to use this template for my feature file
 
-  @tag1
-  Scenario Outline: Title of your scenario outline
-    Given I want to write a step with <name>
-    When I check for the <value> in step
-    Then I verify the <status> in step
+Feature: News
 
-    Examples: 
-      | name  | value | status  |
-      | name1 |     5 | success |
-      | name2 |     7 | Fail    |
+  Scenario: I can open news page
+    Given I can verify the homepage
+    When I click news on the dashboard
+    And I verify i am on the news page
+    And I input spesific keyword on search field
+    And I can see news based on inputted keyword
+    And I click baca selengkapnya button
+    Then I can see detail of news
+    
+
+
+   

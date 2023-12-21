@@ -17,16 +17,22 @@
 ## (Comments)
 #Sample Feature Definition Template
 @tag
-Feature: Title of your feature
-  I want to use this template for my feature file
+Feature: Volunteer vacancies
 
   @tag1
-  Scenario Outline: Title of your scenario outline
-    Given I want to write a step with <name>
-    When I check for the <value> in step
-    Then I verify the <status> in step
+  Scenario Outline: Apply volunteer vacancies success
+    Given I can verify the homepage
+    When I click volunteer button on dashboard
+    And I can choose which vacancies i want to apply
+    And I click ikuti program button
+    And I input my skill
+    And I input my resume <Resume>
+    And I input my alasan <Alasan>
+    And I upload my photo
+    Then I verify success apply volunteer vacancies
 
     Examples: 
-      | name  | value | status  |
-      | name1 |     5 | success |
-      | name2 |     7 | Fail    |
+      | Resume  																																	 | Alasan 																																															|
+      | Saya seseorang yang berkomitmen dalam melakukan sesuatu dan saya juga ulet | Karena saya suka membantu orang-orang kesusahan baik itu anakk-anak maupun nenek-nenek yang kesusahan|
+      
+    

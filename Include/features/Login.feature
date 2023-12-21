@@ -105,7 +105,7 @@ Feature: Title of your feature
     	| Email 			  								  |
       | valenmargaretha@gmail.com       | 
       
-    @tag6
+    @tag7
     Scenario Outline: failed login with email and password not inputted
     Given I already open application
     When I click masuk button

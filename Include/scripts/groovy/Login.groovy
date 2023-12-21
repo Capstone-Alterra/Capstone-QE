@@ -58,7 +58,7 @@ class Login {
 	def I_input_email_on_the_login_page(String Email) {
 		Mobile.tap(findTestObject('Object Repository/3/tap_email_field_login_page'), 30)
 		Mobile.delay(5)
-		
+
 
 		Mobile.setText(findTestObject('Object Repository/3/setText_email_login_page'), Email, 30)
 		Mobile.delay(5)
@@ -81,27 +81,25 @@ class Login {
 		Mobile.verifyElementVisible(findTestObject('Object Repository/3/verify_fitur_menu_homepage'), 30)
 		Mobile.delay(5)
 	}
-	
+
 	@Then("I can verify error message that credentials is invalid")
 	def error_message_credentials_invalid() {
 		Mobile.verifyElementVisible(findTestObject('Object Repository/3/verify_error_invalid_credentials'), 30)
 		Mobile.delay(5)
 	}
-	
+
 	@Then("I can verify error message that email format is invalid")
 	def error_message_format_email_invalid() {
 		Mobile.verifyElementVisible(findTestObject('Object Repository/3/format_email_salah_login'), 30)
 		Mobile.delay(5)
-		
 	}
-	
+
 	@Then("I can verify error message that email is required on the login page")
 	def error_message_email_required_login_page() {
 		Mobile.verifyElementVisible(findTestObject('Object Repository/3/email_tidak_boleh_kosong_login'), 30)
 		Mobile.delay(5)
-		
 	}
-	
+
 	@Then("I can verify error message that password is required on the login page")
 	def error_message_password_required_login_page() {
 		Mobile.verifyElementVisible(findTestObject('Object Repository/3/password_tidak_boleh_kosong_login'), 30)
