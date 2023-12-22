@@ -1,27 +1,45 @@
 package starter.stepdefinition;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Steps;
-import starter.api.Login;
+import starter.api.*;
 
 public class LoginSteps {
     @Steps
     Login log;
 
+    @Given("I Set login endpoint")
+    public void getLogEndpointAdmin() {
+        log.setEndpointsAdmin();
+    }
+    @When("I send login POST HTTP request and fill body parameter for admin")
+    public void sendLogPostHTTPReqAdmin() {
+        log.sendLogPostHTTPrequestAdmin();
+    }
+    @And("I successfully login admin with status code 200")
+    public void successLogAdmin200() {
+        log.responseAdmin();
+    }
+    @Then("I received barier token admin")
+    public void bariertokenAdmin(){log.accessTokenAdmin();}
+
     @Given("I set login endpoint")
-    public void getLogEndpoint() {
-        log.setEndpoints();
+    public void getLogEndpointUser() {
+        log.setEndpointsUser();
     }
-    @When("I send login POST HTTP request and fill body parameter")
-    public void sendLogPostHTTPReq() {
-        log.sendLogPostHTTPrequest();
+    @When("I send login POST HTTP request and fill body parameter for user")
+    public void sendLogPostHTTPReqUser() {
+        log.sendLogPostHTTPrequestUser();
     }
-    @Then("I successfully login with status code 200")
-    public void successLog200() {
-        log.response();
+    @And("I successfully login user with status code 200")
+    public void successLogUser200() {
+        log.responseUser();
     }
+    @Then("I received barier token user")
+    public void bariertokenUser(){log.accessTokenUser();}
 
     @Given("I set valid login endpoint")
     public void setLogEndpoint() {

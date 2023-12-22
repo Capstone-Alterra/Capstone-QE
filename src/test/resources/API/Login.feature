@@ -1,8 +1,15 @@
 Feature: Login
-  Scenario: TC001 - Successfully login by entering valid email and password
+  Scenario: TC001 - Successfully login Admin by entering valid email and password
+    Given I Set login endpoint
+    When I send login POST HTTP request and fill body parameter for admin
+    And I successfully login admin with status code 200
+    Then I received barier token admin
+
+  Scenario: TC001 - Successfully User login by entering valid email and password
     Given I set login endpoint
-    When I send login POST HTTP request and fill body parameter
-    Then I successfully login with status code 200
+    When I send login POST HTTP request and fill body parameter for user
+    And I successfully login user with status code 200
+    Then I received barier token user
 
   Scenario: TC002 - Fail to login because email and password field is empty
     Given I set valid login endpoint

@@ -1,5 +1,6 @@
 package starter.api;
 
+import io.restassured.path.json.JsonPath;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
 import org.json.simple.JSONObject;
@@ -8,21 +9,57 @@ import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 
 public class Login {
     protected static String url = "https://raihpeduli.my.id/auth/login";
-    @Step("I set login endpoint")
-    public String setEndpoints(){
+    public String accessTokenAdmin;
+    public String accessTokenUser;
+    @Step("I Set login endpoint")
+    public String setEndpointsAdmin(){
         return url;
     }
-    @Step("I send login POST HTTP request and fill body parameter")
-    public void sendLogPostHTTPrequest(){
-        JSONObject body = new JSONObject();
-        body.put("email","21102096@ittelkom-pwt.ac.id");
-        body.put("password","izaz1234");
+    @Step("I send login POST HTTP request and fill body parameter for admin")
+    public void sendLogPostHTTPrequestAdmin() {
+        try {
+            JSONObject body = new JSONObject();
+            body.put("email", "admin@raihpeduli.my.id");
+            body.put("password", "user12345");
 
-        SerenityRest.given().header("Content-Type", "application/json").body(body.toJSONString()).post(setEndpoints());
+            SerenityRest.given().header("Content-Type", "application/json").body(body.toJSONString()).post(setEndpointsAdmin());
+        } catch (Exception e) {
+            // Handle the exception (e.g., log it, throw a custom exception, etc.)
+            e.printStackTrace();
+        }
     }
-    @Step("I successfully login with status code 200")
-    public void response(){
+    @Step("I successfully login admin with status code 200")
+    public void responseAdmin(){
         restAssuredThat(response -> response.statusCode(200));
+    }
+    @Step("I received barier token admin")
+    public void accessTokenAdmin(){
+        String responseBody = SerenityRest.lastResponse().asString();
+        JsonPath jsonPath = new JsonPath(responseBody);
+        accessTokenAdmin = jsonPath.getString("data.access_token");
+    }
+
+    @Step("I set login endpoint")
+    public String setEndpointsUser(){
+        return url;
+    }
+    @Step("I send login POST HTTP request and fill body parameter for user")
+    public void sendLogPostHTTPrequestUser(){
+        JSONObject body = new JSONObject();
+        body.put("email","valenmargaretha249@gmail.com");
+        body.put("password","siahaan232");
+
+        SerenityRest.given().header("Content-Type", "application/json").body(body.toJSONString()).post(setEndpointsUser());
+    }
+    @Step("I successfully login user with status code 200")
+    public void responseUser(){
+        restAssuredThat(response -> response.statusCode(200));
+    }
+    @Step("I received barier token user")
+    public void accessTokenUser(){
+        String responseBody = SerenityRest.lastResponse().asString();
+        JsonPath jsonPath = new JsonPath(responseBody);
+        accessTokenUser = jsonPath.getString("data.access_token");
     }
 
     @Step("I set valid login endpoint")
